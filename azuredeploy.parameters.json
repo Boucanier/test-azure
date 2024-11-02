@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmssName": {
-      "value": "myVMScaleSet" // Nom de l'ensemble de VM
+      "value": "newVMset" // Nom de l'ensemble de VM
     },
     "loadBalancerName": {
-      "value": "myLoadBalancer" // Nom de l'équilibreur de charge
+      "value": "newLoadBalancer" // Nom de l'équilibreur de charge
     },
     "publicIPAddressName": {
-      "value": "myPublicIP" // Nom de l'adresse IP publique
+      "value": "newPublicIP" // Nom de l'adresse IP publique
     },
     "networkSecurityGroupName": {
-      "value": "myNetworkSecurityGroup" // Nom du groupe de sécurité réseau
+      "value": "newNSG" // Nom du groupe de sécurité réseau
     },
     "virtualNetworkName": {
-      "value": "myVirtualNetwork" // Nom du réseau virtuel
+      "value": "newVN" // Nom du réseau virtuel
     },
     "subnetName": {
-      "value": "mySubnet" // Nom du sous-réseau
+      "value": "newSubnet" // Nom du sous-réseau
     },
     "addressPrefix": {
       "value": "10.0.0.0/16" // Préfixe d'adresse du réseau virtuel
