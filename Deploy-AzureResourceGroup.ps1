@@ -2,7 +2,7 @@
 
 Param(
     [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation,
-    [string] $ResourceGroupName = '8CLD201',
+    [string] $ResourceGroupName = 'test-azure',
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
     [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
