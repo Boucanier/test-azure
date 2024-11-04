@@ -28,7 +28,7 @@ WantedBy=multi-user.target
 " > /etc/systemd/system/nodeapp.service
 
 sudo systemctl daemon-reload
-sudo systemctl enable my-node-app
+sudo systemctl enable node-app
 sudo systemctl start nodeapp
 
 exit 0
