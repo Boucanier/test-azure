@@ -18,7 +18,7 @@ Description=Mon serveur Node.js
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node /chemin/vers/votre/projet/app.js
+ExecStart=cd /home/azureadmin/website && sudo /usr/bin/npm start
 Restart=always
 User=votre_nom_d_utilisateur
 Environment=PORT=3000
