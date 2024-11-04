@@ -13,22 +13,24 @@ cd /home/azureadmin/website
 
 sudo npm install
 
-sudo echo "[Unit]
-Description=Mon serveur Node.js
-After=network.target
+sudo npm start &
 
-[Service]
-ExecStart=cd /home/azureadmin/website && sudo /usr/bin/npm start
-Restart=always
-User=azureadmin
-Environment=PORT=80
+# sudo echo "[Unit]
+# Description=Mon serveur Node.js
+# After=network.target
 
-[Install]
-WantedBy=multi-user.target
-" > /etc/systemd/system/nodeapp.service
+# [Service]
+# ExecStart=cd /home/azureadmin/website && sudo /usr/bin/npm start
+# Restart=always
+# User=azureadmin
+# Environment=PORT=80
 
-sudo systemctl daemon-reload
-sudo systemctl enable node-app
-sudo systemctl start nodeapp
+# [Install]
+# WantedBy=multi-user.target
+# " > /etc/systemd/system/nodeapp.service
+
+# sudo systemctl daemon-reload
+# sudo systemctl enable node-app
+# sudo systemctl start nodeapp
 
 exit 0
