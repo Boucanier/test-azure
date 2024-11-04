@@ -150,15 +150,15 @@
           "extensionProfile": {
             "extensions": [
               {
-                "name": "InstallApache",
+                "name": "InstallServer",
                 "properties": {
                   "publisher": "Microsoft.Azure.Extensions",
                   "type": "CustomScript",
                   "typeHandlerVersion": "2.0",
                   "autoUpgradeMinorVersion": true,
                   "settings": {
-                    "fileUris": [ "https://raw.githubusercontent.com/Boucanier/test-azure/main/install-apache.sh" ],
-                    "commandToExecute": "bash install-apache.sh"
+                    "fileUris": [ "https://raw.githubusercontent.com/Boucanier/test-azure/main/install-server.sh" ],
+                    "commandToExecute": "bash install-server.sh"
                   }
                 }
               }
