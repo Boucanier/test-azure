@@ -13,6 +13,6 @@ cd /home/azureadmin/website
 
 sudo npm install
 
-sudo npm start
+sudo npm start &
 
 exit 0
