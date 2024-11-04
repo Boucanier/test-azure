@@ -11,8 +11,8 @@ wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/package
 
 cd /home/azureadmin/website
 
-npm install
+sudo npm install
 
-npm start
+sudo npm start
 
 exit 0
