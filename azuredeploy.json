@@ -157,8 +157,8 @@
                   "typeHandlerVersion": "2.0",
                   "autoUpgradeMinorVersion": true,
                   "settings": {
-                    "fileUris": [],
-                    "commandToExecute": "sudo apt-get update && sudo apt-get install -y apache2"
+                    "fileUris": [ "https://raw.githubusercontent.com/Boucanier/test-azure/main/install-apache.sh" ],
+                    "commandToExecute": "bash install-apache.sh"
                   }
                 }
               }
