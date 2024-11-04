@@ -13,6 +13,22 @@ cd /home/azureadmin/website
 
 sudo npm install
 
-sudo npm start &
+sudo echo "[Unit]
+Description=Mon serveur Node.js
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /chemin/vers/votre/projet/app.js
+Restart=always
+User=votre_nom_d_utilisateur
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target
+" > /etc/systemd/system/nodeapp.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable my-node-app
+sudo systemctl start nodeapp
 
 exit 0
