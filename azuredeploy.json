@@ -7,6 +7,9 @@
       "apiVersion": "2024-05-01",
       "name": "[parameters('loadBalancerName')]",
       "location": "[parameters('location')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddressName'))]"
+      ],
       "properties": {
         "frontendIPConfigurations": [
           {
@@ -92,6 +95,11 @@
       "apiVersion": "2024-07-01",
       "name": "[parameters('vmssName')]",
       "location": "[parameters('location')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancerName'))]",
+        "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
+        "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
+      ],
       "sku": {
         "tier": "Standard",
         "capacity": 2,
@@ -238,6 +246,9 @@
       "apiVersion": "2015-04-01",
       "name": "newVMset-Autoscale-765",
       "location": "[parameters('location')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Compute/virtualMachineScaleSets', parameters('vmssName'))]"
+      ],
       "properties": {
         "name": "newVMset-Autoscale-765",
         "enabled": true,
