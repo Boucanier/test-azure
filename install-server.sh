@@ -10,7 +10,7 @@ mkdir /home/azureadmin/website/public
 mkdir /home/azureadmin/website/public/images
 mkdir /home/azureadmin/website/public/styles
 
-wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/app.mjs -O /home/azureadmin/website/app.mjs
+wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/app.js -O /home/azureadmin/website/app.js
 wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/public/images/UQAC_logo.png -O /home/azureadmin/website/public/images/UQAC_logo.png
 wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/public/styles/style.css -O /home/azureadmin/website/public/styles/style.css
 wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/views/index.ejs -O /home/azureadmin/website/views/index.ejs
