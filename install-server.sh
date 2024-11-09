@@ -5,6 +5,10 @@ sudo apt-get update
 sudo apt-get install -y nodejs npm
 
 mkdir /home/azureadmin/website
+mkdir /home/azureadmin/website/views
+mkdir /home/azureadmin/website/public
+mkdir /home/azureadmin/website/public/images
+mkdir /home/azureadmin/website/public/styles
 
 wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/app.mjs -O /home/azureadmin/website/app.mjs
 wget https://raw.githubusercontent.com/Boucanier/test-azure/main/website/public/images/UQAC_logo.png -O /home/azureadmin/website/public/images/UQAC_logo.png
