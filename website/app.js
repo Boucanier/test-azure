@@ -1,11 +1,6 @@
-// app.mjs
-import os from 'os';
-import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// app.js
+const os = require('os');
+const express = require('express');
 
 const app = express();
 const port = 80;
