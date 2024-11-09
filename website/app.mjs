@@ -1,4 +1,4 @@
-// app.js
+// app.mjs
 import os from 'os';
 import express from 'express';
 import path from 'path';
